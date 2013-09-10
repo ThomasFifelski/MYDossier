@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#0b92f8"
+              tools:context=".ListActivity" >
+
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2a84ff"
+                    android:layout_weight="1"
+
+            >
+
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/tom"
+                android:layout_marginTop="10dp"
+              />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom's Bio"
+                android:id="@+id/bio_button"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/mFirstLast"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_marginLeft="17dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/list_Apps"
+            android:layout_below="@+id/bio_button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="152dp"/>
+
+
+
+
+</LinearLayout>
+
